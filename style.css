@@ -1,0 +1,76 @@
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.container:hover {
+    transform: scale(1.05);
+}
+h2 {
+    color: #fff;
+    text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.8);
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    text-align: center;
+    transition: 0.3s;
+}
+input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.7);
+}
+button {
+    padding: 12px;
+    background: #00ffff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.7);
+}
+button:hover {
+    background: #00d4ff;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 1);
+}
+#result {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 8px;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+    animation: fadeIn 0.5s ease-in-out;
+}
+.fraud {
+    background-color: rgba(255, 0, 0, 0.2);
+    color: red;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.5);
+}
+.legit {
+    background-color: rgba(0, 255, 127, 0.2);
+    color: limegreen;
+    box-shadow: 0px 0px 15px rgba(0, 255, 127, 0.5);
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
